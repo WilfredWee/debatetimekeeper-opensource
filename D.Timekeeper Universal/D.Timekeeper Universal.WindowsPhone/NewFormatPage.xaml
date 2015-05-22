@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="D.Timekeeper_Universal.NewFormatPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:D.Timekeeper_Universal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding RelativeSource={RelativeSource Self}}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+
+    <Grid x:Name="LayoutRoot" Margin="12, 12, 12, 12">
+        <StackPanel>
+            <TextBlock Text="NEW DEBATE FORMAT" FontSize="15"/>
+            <TextBox Name="FormatNameTextBox" PlaceholderText="Name" Margin="0,30,0,0"/>
+            <TextBlock Text="Speakers:" Margin="0,20,0,0" FontSize="15"/>
+            <ListView 
+                Height="320"
+                Margin="0,12,0,0"
+                ItemsSource="{Binding Speakers}"
+                IsItemClickEnabled="True"
+                ItemClick="ListView_ItemClick">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Holding="SpeakerStackPanel_Holding">
+                            <FlyoutBase.AttachedFlyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Name="DeleteFlyoutItem" Text="delete" Click="SpeakerDeleteFlyoutItem_Click" />
+                                </MenuFlyout>
+                            </FlyoutBase.AttachedFlyout>
+                            <TextBlock Text="{Binding name}" Style="{ThemeResource ListViewItemTextBlockStyle}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Content="Add Speaker" HorizontalAlignment="Center" Margin="0,12,0,0" Click="AddSpeakerButton_Click"/>
+        </StackPanel>
+    </Grid>
+
+    
+    <Page.BottomAppBar>
+        <CommandBar IsOpen="True">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Name="SaveAppBarButton" Label="save" Icon="Save" Click="SaveAppBarButton_Click" IsEnabled="False">
+                    <ProgressRing x:Name="LoadingRing" Visibility="Collapsed" IsActive="False"/>
+                </AppBarButton>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>

@@ -1,0 +1,276 @@
+﻿[
+    {
+        "name": "British Parliamentary",
+        "speakers": [
+            {
+                "name": "Prime Minister",
+                "ringPairs": [
+                    {
+                        "Key": 60,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 360,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 420,
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "name": "Leader of Opposition",
+                "ringPairs": [
+                    {
+                        "Key": 60,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 360,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 420,
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "name": "Deputy Prime Minister",
+                "ringPairs": [
+                    {
+                        "Key": 60,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 360,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 420,
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "name": "Deputy Leader of Opposition",
+                "ringPairs": [
+                    {
+                        "Key": 60,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 360,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 420,
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "name": "Member of Government",
+                "ringPairs": [
+                    {
+                        "Key": 60,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 360,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 420,
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "name": "Member of Opposition",
+                "ringPairs": [
+                    {
+                        "Key": 60,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 360,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 420,
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "name": "Government Whip",
+                "ringPairs": [
+                    {
+                        "Key": 60,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 360,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 420,
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "name": "Opposition Whip",
+                "ringPairs": [
+                    {
+                        "Key": 60,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 360,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 420,
+                        "Value": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Asian Parliamentary",
+        "speakers": [
+            {
+                "name": "Prime Minister",
+                "ringPairs": [
+                    {
+                        "Key": 60,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 360,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 420,
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "name": "Leader of Opposition",
+                "ringPairs": [
+                    {
+                        "Key": 60,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 360,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 420,
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "name": "Deputy Prime Minister",
+                "ringPairs": [
+                    {
+                        "Key": 60,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 360,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 420,
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "name": "Deputy Leader of Opposition",
+                "ringPairs": [
+                    {
+                        "Key": 60,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 360,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 420,
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "name": "Government Whip",
+                "ringPairs": [
+                    {
+                        "Key": 60,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 360,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 420,
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "name": "Opposition Whip",
+                "ringPairs": [
+                    {
+                        "Key": 60,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 360,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 420,
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "name": "Opposition Reply",
+                "ringPairs": [
+                    {
+                        "Key": 180,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 240,
+                        "Value": 2
+                    }
+                ]
+            },
+            {
+                "name": "Government Reply",
+                "ringPairs": [
+                    {
+                        "Key": 180,
+                        "Value": 1
+                    },
+                    {
+                        "Key": 240,
+                        "Value": 2
+                    }
+                ]
+            }
+        ]
+    }
+]

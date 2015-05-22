@@ -1,0 +1,70 @@
+﻿<Page x:Name="page"
+    x:Class="D.Timekeeper_Universal.NewSpeakerPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:D.Timekeeper_Universal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding RelativeSource={RelativeSource Self}}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+    <Grid x:Name="LayoutRoot" Margin="12, 12, 12, 12">
+        <StackPanel Orientation="Vertical">
+            <TextBlock Text="NEW SPEAKER" FontSize="15"/>
+            <TextBox Name="PositionTextBox" PlaceholderText="Position Name" Margin="0,30,0,0" TextChanged="PositionTextBox_TextChanged"/>
+            <ListView
+                ItemsSource="{Binding RingPairs}"
+                Height="360" 
+                Margin="0,12,0,0">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:Name="ListViewItemDataTemplate">
+                            <Grid Margin="0,12,0,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" Text="Minutes:"/>
+                                <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" Text="Seconds:"/>
+                                <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Stretch" Text="Rings:"/>
+
+                            <ComboBox Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" Name="MinutesComboBox" MinWidth="50" Height="50" Width="Auto" Margin="0,0,6,0" 
+                                      ItemsSource="{Binding ElementName=page, Path=DataContext.AvailableTimes}"
+                                      PlaceholderText="Choose"
+                                      DropDownOpened="RingPairComboBox_DropDownOpened"
+                                      SelectionChanged="MinutesComboBox_SelectionChanged"/>
+                            <ComboBox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" Name="SecondsComboBox" MinWidth="50" Height="50" Width="Auto" Margin="6,0,6,0" 
+                                      ItemsSource="{Binding ElementName=page, Path=DataContext.AvailableTimes}"
+                                      PlaceholderText="Choose"
+                                      DropDownOpened="RingPairComboBox_DropDownOpened"
+                                      SelectionChanged="SecondsComboBox_SelectionChanged"/>
+                            <ComboBox Grid.Row="1" Grid.Column="2" HorizontalAlignment="Stretch" Name="RingAmountsComboBox" MinWidth="50" Height="50" Width="Auto" Margin="6,0,0,0" 
+                                      ItemsSource="{Binding ElementName=page, Path=DataContext.AvailableRingAmounts}"
+                                      PlaceholderText="Choose"
+                                      DropDownOpened="RingPairComboBox_DropDownOpened"
+                                      SelectionChanged="RingAmountsComboBox_SelectionChanged"/>
+                            </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Content="Add Ring Time" HorizontalAlignment="Center" Margin="0,12,0,0" Click="AddRingButton_Click"/>
+        </StackPanel>
+
+
+    </Grid>
+
+    <Page.BottomAppBar>
+        <CommandBar IsOpen="True">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Name="SaveAppBarButton" Label="save" Icon="Save"  Click="SaveAppBarButton_Click" IsEnabled="False">
+                </AppBarButton>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>

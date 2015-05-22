@@ -1,0 +1,94 @@
+﻿<Page
+    x:Class="D.Timekeeper_Universal.HubPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:D.Timekeeper_Universal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    DataContext="{Binding RelativeSource={RelativeSource Self}}"
+    d:DataContext="{Binding Source={d:DesignData Source=../D.Timekeeper Universal.Shared/DataModel/DebateFormats.json, Type=data:DebateFormatsSource}}"
+    xmlns:data="using:D.Timekeeper_Universal.DataModel"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Default">
+                    <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="Assets/HubBackground.png"/>
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="HighContrast">
+                    <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="{x:Null}"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+
+            <DataTemplate x:Key="HubSectionHeaderTemplate">
+                <TextBlock Margin="0,0,0,-9.5" Text="{Binding}"/>
+            </DataTemplate>
+
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <Hub x:Name="Hub" x:Uid="Hub" Header="Debate Timekeeper">
+            <HubSection x:Uid="HubSection1" Header="DEBATE FORMATS" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+                <DataTemplate>
+                    <ListView
+                        ItemsSource="{Binding DebateFormats}"
+                        IsItemClickEnabled="True"
+                        ItemClick="DebateFormatsSection_ItemClick"
+                        ContinuumNavigationTransitionInfo.ExitElementContainer="True">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="0,0,0,27.5" Holding="StackPanel_Holding">
+                                    <FlyoutBase.AttachedFlyout>
+                                        <MenuFlyout>
+                                            <MenuFlyoutItem Name="DeleteFlyout" Text="delete" Click="DeleteFlyout_Click"/>
+                                            <MenuFlyoutItem Name="InfoFlyout" Text="info" Click="InfoFlyout_Click"/>
+                                        </MenuFlyout>
+                                    </FlyoutBase.AttachedFlyout>
+                                    <TextBlock Text="{Binding name}" Style="{ThemeResource ListViewItemTextBlockStyle}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection x:Uid="HubSection2" Header="INFO" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+                <DataTemplate>
+                    <StackPanel Margin="0,0,0,27.5">
+                        <TextBlock FontSize="18" TextWrapping="Wrap" Width="Auto">
+                                You can tap and hold on the debate formats to delete or get more info.<LineBreak/><LineBreak/> 
+                                When adding a new debate format, you can tap on the speaker to reveal more info.<LineBreak/><LineBreak/> 
+                                Please do leave a review on what you'd like to see in this app, thanks.<LineBreak/><LineBreak/>
+                        </TextBlock>
+                        <TextBlock Margin="0,34,0,0" FontSize="35" Text="Rate and Review" Tapped="RateAndReviewTextBlock_Tapped"/>
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection x:Uid="HubSection3" Header="KNOWN ISSUES" HeaderTemplate="{ThemeResource HubSectionHeaderTemplate}">
+                <DataTemplate>
+                    <StackPanel Margin="0,0,0,27.5">
+                        <TextBlock FontSize="18" TextWrapping="Wrap" Width="Auto">
+                            Sometimes Debate Formats will not appear when you open the app. Please press the Back button to exit the app and open it again.
+                            <LineBreak/><LineBreak/>
+                            The Back button might have strange behaviors when adding a new Format.
+                            <LineBreak/><LineBreak/>
+                            If your app crashes when selecting a Debate Format, please uninstall and re-install the app.
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+    </Grid>
+
+    <Page.BottomAppBar>
+        <CommandBar IsOpen="True">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Label="add" Icon="Add" Click="AppBarAddButton_Click">
+                </AppBarButton>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>

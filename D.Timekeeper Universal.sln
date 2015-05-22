@@ -1,0 +1,119 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "D.Timekeeper Universal", "D.Timekeeper Universal", "{44B0A1DD-1F43-486D-8652-5BD6C970594F}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "D.Timekeeper Universal.Shared", "D.Timekeeper Universal\D.Timekeeper Universal.Shared\D.Timekeeper Universal.Shared.shproj", "{64539F29-CA92-486B-A187-7BE324D4A0DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D.Timekeeper Universal.Windows", "D.Timekeeper Universal\D.Timekeeper Universal.Windows\D.Timekeeper Universal.Windows.csproj", "{958B654F-2251-4646-A96F-C3952CB4607D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D.Timekeeper Universal.WP", "D.Timekeeper Universal\D.Timekeeper Universal.WindowsPhone\D.Timekeeper Universal.WP.csproj", "{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{82040BC9-7847-45F3-9DF2-FDA483B4823D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		D.Timekeeper Universal\D.Timekeeper Universal.Shared\D.Timekeeper Universal.Shared.projitems*{64539f29-ca92-486b-a187-7be324d4a0de}*SharedItemsImports = 13
+		D.Timekeeper Universal\D.Timekeeper Universal.Shared\D.Timekeeper Universal.Shared.projitems*{a32d2a88-3b50-4dc0-aaf4-721bf7dafce8}*SharedItemsImports = 4
+		D.Timekeeper Universal\D.Timekeeper Universal.Shared\D.Timekeeper Universal.Shared.projitems*{958b654f-2251-4646-a96f-c3952cb4607d}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|ARM.ActiveCfg = Debug|ARM
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|ARM.Build.0 = Debug|ARM
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|ARM.Deploy.0 = Debug|ARM
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|Mixed Platforms.Deploy.0 = Debug|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|Win32.ActiveCfg = Debug|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|Win32.Build.0 = Debug|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|Win32.Deploy.0 = Debug|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|x64.ActiveCfg = Debug|x64
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|x64.Build.0 = Debug|x64
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|x64.Deploy.0 = Debug|x64
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|x86.ActiveCfg = Debug|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|x86.Build.0 = Debug|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Debug|x86.Deploy.0 = Debug|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|ARM.ActiveCfg = Release|ARM
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|ARM.Build.0 = Release|ARM
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|ARM.Deploy.0 = Release|ARM
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|Mixed Platforms.Deploy.0 = Release|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|Win32.ActiveCfg = Release|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|Win32.Build.0 = Release|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|Win32.Deploy.0 = Release|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|x64.ActiveCfg = Release|x64
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|x64.Build.0 = Release|x64
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|x64.Deploy.0 = Release|x64
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|x86.ActiveCfg = Release|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|x86.Build.0 = Release|x86
+		{958B654F-2251-4646-A96F-C3952CB4607D}.Release|x86.Deploy.0 = Release|x86
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|Any CPU.ActiveCfg = Debug|ARM
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|Any CPU.Build.0 = Debug|ARM
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|Any CPU.Deploy.0 = Debug|ARM
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|ARM.ActiveCfg = Debug|ARM
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|ARM.Build.0 = Debug|ARM
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|ARM.Deploy.0 = Debug|ARM
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|Mixed Platforms.ActiveCfg = Debug|ARM
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|Mixed Platforms.Build.0 = Debug|ARM
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|Mixed Platforms.Deploy.0 = Debug|ARM
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|Win32.ActiveCfg = Debug|x86
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|Win32.Build.0 = Debug|x86
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|Win32.Deploy.0 = Debug|x86
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|x86.ActiveCfg = Debug|x86
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|x86.Build.0 = Debug|x86
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Debug|x86.Deploy.0 = Debug|x86
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|Any CPU.ActiveCfg = Release|ARM
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|Any CPU.Build.0 = Release|ARM
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|Any CPU.Deploy.0 = Release|ARM
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|ARM.ActiveCfg = Release|ARM
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|ARM.Build.0 = Release|ARM
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|ARM.Deploy.0 = Release|ARM
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|Mixed Platforms.Build.0 = Release|x86
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|Mixed Platforms.Deploy.0 = Release|x86
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|Win32.ActiveCfg = Release|x86
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|Win32.Build.0 = Release|x86
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|Win32.Deploy.0 = Release|x86
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|x64.ActiveCfg = Release|Any CPU
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|x86.ActiveCfg = Release|x86
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|x86.Build.0 = Release|x86
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64539F29-CA92-486B-A187-7BE324D4A0DE} = {44B0A1DD-1F43-486D-8652-5BD6C970594F}
+		{958B654F-2251-4646-A96F-C3952CB4607D} = {44B0A1DD-1F43-486D-8652-5BD6C970594F}
+		{A32D2A88-3B50-4DC0-AAF4-721BF7DAFCE8} = {44B0A1DD-1F43-486D-8652-5BD6C970594F}
+	EndGlobalSection
+EndGlobal
